@@ -7,6 +7,6 @@
 
 digit_day = int(input('Ввелите цифру от 1 до 7: '))
 
-if digit_day<1 or digit_day>7: print('Введите верну цифру')
+if digit_day<1 or digit_day>7: print('Вы ввели неверную цифру')
 elif digit_day ==6 or digit_day==7: print('День выходной')
 else: print('Этот день не является выходным')
