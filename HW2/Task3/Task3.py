@@ -10,7 +10,8 @@ def alist(num):
 
 def summ(alist):
     summ = 0
-    for i in alist:
+    k=len(alist)
+    for i in range(k):
         summ = summ + alist[i]
     return summ
 
