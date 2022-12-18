@@ -6,7 +6,7 @@
 num = float(input('Введите вещественное число: '))
 num = num*(10**5)
 sum = 0
-# for i in range():
+
 while num >0:
     sum = sum + num%10
     num = num//10
