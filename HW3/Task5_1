@@ -1,0 +1,11 @@
+def feb_list(n: int):
+    k,l=1,1
+    alist=[0]
+    for i in range(n):
+        alist.append(k)
+        alist.insert(0,k*(-1)**i)
+        k,l= l, k+l
+    return alist
+       
+n=int(input('введите число '))
+print(*feb_list(n))
