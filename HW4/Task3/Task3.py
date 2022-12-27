@@ -14,28 +14,27 @@ def rand_list(a, b, n):
         alist.append(k)
     return alist
 
+def rang_list(alist1):
+    new_list=[]
 
-# def uniq_elem(alist, num):
-#     new_list = []
-#     # str_alist =" ".join(map(str, alist))
-#     # str_list = str(alist).strip('[]')
-#     count = 0
-#     k=0
-#     for i in range(num):
-#         # if str_alist.count(i) == 1:
-#         # if alist[i]
-#         new_list.append(i)
-#         if new_list[i]==alist[i+1]:
-           
-#     return new_list
+    for i in range(0, len(alist1)):
+        for j in range(i+1, len(alist1)):
+            if alist1[i]!=alist1[j]:
+                count=1
+            else:
+                count = 0
+                break
+        if count ==1:         
+            new_list.append(alist1[i]) 
+    return new_list
 
 
 x = int(input('введите число a: '))
 y = int(input('введите число b: '))
 num = int(input('введите число n: '))
-# str_alist =" ".join(map(str, alist))
-alist = rand_list(x, y, num)
-print(alist)
-print(set(alist))
-# print(" ".join(map(str, alist)))
-# print(uniq_elem(rand_list))
+alist1 = rand_list(x, y, num)
+print(alist1)
+r_n = rang_list(alist1)
+print(r_n)  
+
+
